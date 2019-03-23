@@ -10,6 +10,8 @@ body {
     clear: both;
 }
 
+/* mm */
+
 /* 继承爸爸的颜色 */
 
 a {
@@ -107,6 +109,7 @@ hr {
     max-width: 940px;
     margin: 0 auto;
     background-color: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .userCard .welcome {
@@ -163,12 +166,12 @@ hr {
     color: #9da0a7;
 }
 
-.userCard > footer.media {
+.userCard>footer.media {
     background-color: #e6686a;
     text-align: center;
 }
 
-.userCard > footer.media>a {
+.userCard>footer.media>a {
     display: inline-block;
     width: 40px;
     padding: 5px 0;
@@ -177,11 +180,9 @@ hr {
     margin: 16px;
 }
 
-.userCard > footer.media>a:hover {
+.userCard>footer.media>a:hover {
     background-color: #cf5d5f
 }
-
-
 
 .userCard svg {
     width: 30px;
@@ -189,4 +190,41 @@ hr {
     fill: white;
     /* margin: 0 16px; */
     vertical-align: top;
+}
+
+body>main {
+    position: relative;
+    margin-top: -360PX;
+}
+
+body>main>.downloadWrapper {
+    text-align: center;
+}
+
+body>main>.downloadWrapper>.download {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #cdcfd1;
+    background-color: #efefef;
+    display: inline-block;
+    border-radius: 2px;
+    color: #3d4451;
+    font-weight: bold;
+    margin-top: 32px;
+    transition: box-shadow 0.2s;
+}
+
+body>main>.downloadWrapper>.download:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+.selfIntroduction {
+    max-width: 940px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: kai;
+    line-height: 1.8;
+    font-size: 18px;
 }
